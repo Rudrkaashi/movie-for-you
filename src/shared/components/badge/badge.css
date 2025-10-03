@@ -1,0 +1,70 @@
+/**
+ * Badge Component Styles
+ */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-1);
+    padding: var(--spacing-1) var(--spacing-3);
+    border-radius: var(--radius-sm);
+    font-weight: var(--font-semibold);
+    font-size: var(--text-xs);
+    white-space: nowrap;
+}
+
+/* Variants */
+.badge-default {
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+}
+
+.badge-primary {
+    background: var(--accent-primary);
+    color: var(--white);
+}
+
+.badge-success {
+    background: #22c55e;
+    color: var(--white);
+}
+
+.badge-warning {
+    background: #f59e0b;
+    color: var(--white);
+}
+
+.badge-error {
+    background: #ef4444;
+    color: var(--white);
+}
+
+.badge-info {
+    background: #3b82f6;
+    color: var(--white);
+}
+
+/* Sizes */
+.badge-small {
+    padding: 2px var(--spacing-2);
+    font-size: 0.65rem;
+}
+
+.badge-medium {
+    padding: var(--spacing-1) var(--spacing-3);
+    font-size: var(--text-xs);
+}
+
+.badge-large {
+    padding: var(--spacing-2) var(--spacing-4);
+    font-size: var(--text-sm);
+}
+
+/* Pill shape */
+.badge-pill {
+    border-radius: var(--radius-full);
+}
+
+.badge i {
+    font-size: 0.9em;
+}

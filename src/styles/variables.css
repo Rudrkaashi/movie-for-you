@@ -1,0 +1,206 @@
+/**
+ * CSS Custom Properties (Variables)
+ * Olive Green & White Theme System
+ */
+
+:root {
+    /* ===========================
+       Color Palette - Olive Green & White
+       =========================== */
+    
+    /* Primary Colors - Olive Green Shades */
+    --olive-green-900: #3C4F1F;
+    --olive-green-800: #4A5F25;
+    --olive-green-700: #556B2F;
+    --olive-green-600: #6B8E23;
+    --olive-green-500: #7FA332;
+    --olive-green-400: #93B842;
+    --olive-green-300: #A8CC52;
+    --olive-green-200: #C4E078;
+    --olive-green-100: #E0F2A8;
+    
+    /* Neutral Colors */
+    --white: #FFFFFF;
+    --off-white: #F8F9FA;
+    --gray-100: #F3F4F6;
+    --gray-200: #E5E7EB;
+    --gray-300: #D1D5DB;
+    --gray-400: #9CA3AF;
+    --gray-500: #6B7280;
+    --gray-600: #4B5563;
+    --gray-700: #374151;
+    --gray-800: #1F2937;
+    --gray-900: #111827;
+    --black: #0A0A0A;
+    
+    /* Special Colors */
+    --gold: #FFD700;
+    --red-tomato: #FA320A;
+    --star-yellow: #F5C518;
+    
+    /* ===========================
+       Typography
+       =========================== */
+    --font-primary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-heading: 'Cinzel', 'Georgia', serif;
+    --font-display: 'Playfair Display', 'Georgia', serif;
+    --font-mono: 'Fira Code', 'Consolas', monospace;
+    
+    /* Font Sizes */
+    --text-xs: 0.75rem;      /* 12px */
+    --text-sm: 0.875rem;     /* 14px */
+    --text-base: 1rem;       /* 16px */
+    --text-lg: 1.125rem;     /* 18px */
+    --text-xl: 1.25rem;      /* 20px */
+    --text-2xl: 1.5rem;      /* 24px */
+    --text-3xl: 1.875rem;    /* 30px */
+    --text-4xl: 2.25rem;     /* 36px */
+    --text-5xl: 3rem;        /* 48px */
+    --text-6xl: 3.75rem;     /* 60px */
+    --text-7xl: 4.5rem;      /* 72px */
+    
+    /* Font Weights */
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-black: 900;
+    
+    /* Line Heights */
+    --leading-tight: 1.2;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.75;
+    --leading-loose: 2;
+    
+    /* ===========================
+       Spacing System (8px base)
+       =========================== */
+    --spacing-0: 0;
+    --spacing-1: 0.25rem;    /* 4px */
+    --spacing-2: 0.5rem;     /* 8px */
+    --spacing-3: 0.75rem;    /* 12px */
+    --spacing-4: 1rem;       /* 16px */
+    --spacing-5: 1.25rem;    /* 20px */
+    --spacing-6: 1.5rem;     /* 24px */
+    --spacing-8: 2rem;       /* 32px */
+    --spacing-10: 2.5rem;    /* 40px */
+    --spacing-12: 3rem;      /* 48px */
+    --spacing-16: 4rem;      /* 64px */
+    --spacing-20: 5rem;      /* 80px */
+    --spacing-24: 6rem;      /* 96px */
+    --spacing-32: 8rem;      /* 128px */
+    
+    /* ===========================
+       Border Radius
+       =========================== */
+    --radius-none: 0;
+    --radius-sm: 0.375rem;   /* 6px */
+    --radius-md: 0.5rem;     /* 8px */
+    --radius-lg: 0.75rem;    /* 12px */
+    --radius-xl: 1rem;       /* 16px */
+    --radius-2xl: 1.5rem;    /* 24px */
+    --radius-full: 9999px;
+    
+    /* ===========================
+       Shadows - Cinematic Depth
+       =========================== */
+    --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+    --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    
+    /* Glow Effects */
+    --glow-olive: 0 0 20px rgba(107, 142, 35, 0.4);
+    --glow-olive-strong: 0 0 40px rgba(107, 142, 35, 0.6);
+    
+    /* ===========================
+       Transitions & Animations
+       =========================== */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Easing Functions */
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-cinematic: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+    /* ===========================
+       Z-Index Layers
+       =========================== */
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
+    --z-toast: 1080;
+    
+    /* ===========================
+       Container Widths
+       =========================== */
+    --container-sm: 640px;
+    --container-md: 768px;
+    --container-lg: 1024px;
+    --container-xl: 1280px;
+    --container-2xl: 1536px;
+}
+
+/* ===========================
+   Dark Theme (Default)
+   =========================== */
+body[data-theme="dark"] {
+    --bg-primary: #0A0A0A;
+    --bg-secondary: #1A1A1A;
+    --bg-tertiary: #2A2A2A;
+    --bg-card: #1F1F1F;
+    --bg-hover: #2F2F2F;
+    
+    --text-primary: #FFFFFF;
+    --text-secondary: #B8B8B8;
+    --text-tertiary: #888888;
+    --text-muted: #666666;
+    
+    --accent-primary: #6B8E23;
+    --accent-secondary: #556B2F;
+    --accent-hover: #7FA332;
+    
+    --border-color: #3A3A3A;
+    --border-hover: #4A4A4A;
+    
+    --overlay: rgba(10, 10, 10, 0.95);
+    --gradient-overlay: linear-gradient(180deg, rgba(10,10,10,0) 0%, rgba(10,10,10,0.8) 70%, rgba(10,10,10,1) 100%);
+}
+
+/* ===========================
+   Light Theme
+   =========================== */
+body[data-theme="light"] {
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F8F9FA;
+    --bg-tertiary: #F3F4F6;
+    --bg-card: #FFFFFF;
+    --bg-hover: #E5E7EB;
+    
+    --text-primary: #0A0A0A;
+    --text-secondary: #374151;
+    --text-tertiary: #6B7280;
+    --text-muted: #9CA3AF;
+    
+    --accent-primary: #556B2F;
+    --accent-secondary: #6B8E23;
+    --accent-hover: #4A5F25;
+    
+    --border-color: #E5E7EB;
+    --border-hover: #D1D5DB;
+    
+    --overlay: rgba(255, 255, 255, 0.95);
+    --gradient-overlay: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 70%, rgba(255,255,255,1) 100%);
+}

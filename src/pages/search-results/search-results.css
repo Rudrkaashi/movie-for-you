@@ -1,0 +1,30 @@
+/**
+ * Search Results Page Styles
+ */
+
+.search-results-page {
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.results-header {
+    padding: var(--spacing-12) 0 var(--spacing-8);
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, transparent 100%);
+}
+
+.results-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: var(--spacing-2);
+    color: var(--text-primary);
+}
+
+.results-query {
+    font-size: var(--text-xl);
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+#filter-ui-container {
+    margin-bottom: var(--spacing-8);
+}

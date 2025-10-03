@@ -1,0 +1,176 @@
+/**
+ * Typography System
+ * Cinematic Font Styles
+ */
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-bold);
+    line-height: var(--leading-tight);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-4);
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, var(--text-6xl));
+    font-weight: var(--font-black);
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, var(--text-5xl));
+    font-weight: var(--font-bold);
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: clamp(1.75rem, 3vw, var(--text-4xl));
+    font-weight: var(--font-bold);
+}
+
+h4 {
+    font-size: clamp(1.5rem, 2.5vw, var(--text-3xl));
+    font-weight: var(--font-semibold);
+}
+
+h5 {
+    font-size: clamp(1.25rem, 2vw, var(--text-2xl));
+    font-weight: var(--font-semibold);
+}
+
+h6 {
+    font-size: clamp(1rem, 1.5vw, var(--text-xl));
+    font-weight: var(--font-semibold);
+}
+
+/* Paragraph Styles */
+p {
+    font-size: var(--text-base);
+    line-height: var(--leading-normal);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-4);
+}
+
+p.lead {
+    font-size: var(--text-xl);
+    line-height: var(--leading-relaxed);
+    color: var(--text-secondary);
+}
+
+/* Text Modifiers */
+.text-gradient {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-cinematic {
+    font-family: var(--font-display);
+    font-weight: var(--font-black);
+    font-size: clamp(3rem, 7vw, var(--text-7xl));
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+
+/* Link Styles */
+a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 4px;
+    border-radius: var(--radius-sm);
+}
+
+/* List Styles */
+ul, ol {
+    margin-left: var(--spacing-6);
+    margin-bottom: var(--spacing-4);
+}
+
+li {
+    margin-bottom: var(--spacing-2);
+    line-height: var(--leading-relaxed);
+}
+
+/* Blockquote */
+blockquote {
+    padding: var(--spacing-4) var(--spacing-6);
+    border-left: 4px solid var(--accent-primary);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-6) 0;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+blockquote cite {
+    display: block;
+    margin-top: var(--spacing-2);
+    font-size: var(--text-sm);
+    color: var(--text-tertiary);
+    font-style: normal;
+}
+
+/* Code & Pre */
+code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    padding: 0.2em 0.4em;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-sm);
+    color: var(--accent-primary);
+}
+
+pre {
+    font-family: var(--font-mono);
+    padding: var(--spacing-4);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    overflow-x: auto;
+    margin: var(--spacing-4) 0;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+}
+
+/* Strong & Em */
+strong, b {
+    font-weight: var(--font-bold);
+    color: var(--text-primary);
+}
+
+em, i {
+    font-style: italic;
+}
+
+/* Small Text */
+small {
+    font-size: var(--text-sm);
+    color: var(--text-tertiary);
+}
+
+/* Mark/Highlight */
+mark {
+    background: var(--olive-green-200);
+    color: var(--black);
+    padding: 0.1em 0.3em;
+    border-radius: var(--radius-sm);
+}
+
+/* Text Alignment */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }

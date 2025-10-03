@@ -1,0 +1,40 @@
+ # Dependencies
+node_modules/
+package-lock.json
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Build
+dist/
+build/
+*.min.js
+*.min.css
+
+# Cache
+.cache/
+*.cache
+
+# Misc
+*.swp
+*.swo
+*~
+.tmp/
